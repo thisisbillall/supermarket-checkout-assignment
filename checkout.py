@@ -7,6 +7,9 @@ class SupermarketCheckout:
     def calculate_total(self, items):
         item_count = {}
         for item in items:
+            if item not in self.prices:
+                print(f"Warning: Skipping invalid item '{item}'.")
+                continue
             item_count[item] = item_count.get(item, 0) + 1
 
         total_price = 0
