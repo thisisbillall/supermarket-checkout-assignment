@@ -6,4 +6,4 @@ COPY . /app
 
 EXPOSE 5000
 
-CMD ["python", "checkout.py"]
+CMD ["python", "-i", "checkout.py"]
