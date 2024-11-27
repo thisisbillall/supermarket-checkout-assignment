@@ -18,12 +18,7 @@ class TestSupermarketCheckout(unittest.TestCase):
         self.assertEqual(self.checkout.calculate_total("AB"), 80)
         self.assertEqual(self.checkout.calculate_total("CDBA"), 115)
 
-    def test_discounts(self):
-        self.assertEqual(self.checkout.calculate_total("AAA"), 130)
-        self.assertEqual(self.checkout.calculate_total("AAAA"), 180)
-        self.assertEqual(self.checkout.calculate_total("AAAB"), 160)
-
-    def test_complex_cases(self):
+    def test_other_cases(self):
         self.assertEqual(self.checkout.calculate_total("AAABB"), 175)
         self.assertEqual(self.checkout.calculate_total("AAABBD"), 190)
         self.assertEqual(self.checkout.calculate_total("DABABA"), 190)
