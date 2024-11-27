@@ -1,7 +1,7 @@
 # Steps to Run
 # Standalone Interactive Session
 1] Clone this repo 
-    git clone https://github.com/thisisbillall/supermarket-checkout-assignment.git
+    git clone https://github.com/thisisbillall/supermarket-checkout-assignment.git <br/>
 2] cd supermarket-checkout-assignment
 3] Run checkout.py as
     python -i checkout.py 
